@@ -53,5 +53,5 @@ npm test
 [Click here to view the project](https://task-meci.vercel.app/)
 
 ## Screen Shots
-![Homepage](./screenshots/Screenshot1.png)
-![Search Time in Search box](./screenshots/Screenshot2.png)
+![Homepage](client/screenshots/Screenshot1.png)
+![Search Time in Search box](client/screenshots/Screenshot2.png)
