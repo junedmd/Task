@@ -1,0 +1,21 @@
+:root{
+--accent:#0b74de;
+--muted:#666;
+--bg:#f5f7fb;
+}
+body{font-family:Inter, system-ui, Arial, sans-serif;margin:0;background:var(--bg);color:#111}
+.app-header{background:#fff;padding:16px 24px;box-shadow:0 1px 4px rgba(0,0,0,.06)}
+.app-root h1{margin:0;font-size:18px}
+.container{max-width:980px;margin:20px auto;padding:16px}
+.searchbar input{width:100%;padding:10px;border-radius:8px;border:1px solid #ddd}
+.list{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px;margin-top:16px}
+.item-card{background:#fff;border-radius:8px;padding:12px;display:flex;gap:12px;align-items:center;box-shadow:0 1px 4px rgba(2,6,23,.04)}
+.item-card img{width:64px;height:64px;object-fit:contain}
+.item-body h3{margin:0;font-size:14px}
+.item-body .category{color:var(--muted);font-size:12px}
+.item-body .price{font-weight:600;margin-top:6px}
+.pagination{display:flex;gap:12px;justify-content:center;align-items:center;margin-top:18px}
+.center{display:flex;align-items:center;justify-content:center;height:200px}
+.error{color:#b00020}
+.empty{padding:18px;text-align:center;color:var(--muted)}
+.meta{margin-top:12px;color:var(--muted);font-size:13px;text-align:right}

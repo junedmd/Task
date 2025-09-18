@@ -1,0 +1,51 @@
+.item-list {
+  max-width: 1024px; 
+  margin: 0 auto;
+  padding: 16px;
+}
+
+
+.loading {
+  text-align: center;
+  padding: 40px 0;
+}
+
+.error {
+  text-align: center;
+  padding: 40px 0;
+  color: #dc2626; 
+}
+
+
+.no-results {
+  text-align: center;
+  color: #6b7280;
+  padding: 40px 0;
+}
+
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+
+.results-count {
+  font-size: 14px;
+  color: #6b7280;
+  text-align: right;
+  margin-top: 8px;
+}
+
+@media (min-width: 640px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
