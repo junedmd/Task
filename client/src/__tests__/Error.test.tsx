@@ -1,4 +1,4 @@
-import React from 'react'
+
 import { render, screen, waitFor } from '@testing-library/react'
 import ItemList from '../pages/ItemList/ItemList'
 import * as api from '../api'
