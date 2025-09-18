@@ -1,69 +1,57 @@
-# React + TypeScript + Vite
+# 🛒 Product List App (React + TypeScript)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A small demo project that fetches products from a public API and displays them in a **searchable, paginated list** with loading and error states.  
 
-Currently, two official plugins are available:
+This project is built as a showcase for **clean React code, API handling, and unit testing**.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🚀 Features
+- 🔍 **Searchable list** — filter products by title or category.
+- 📑 **Pagination** — shows 6 products per page with Prev/Next navigation.
+- ⏳ **Loading state** — shows loader while fetching data.
+- ⚠️ **Error state** — handles network/API errors gracefully.
+- ✅ **Unit tests** — written with Vitest + Testing Library.
+- 🎨 **Reusable components** — `ItemCard`, `SearchBar`, `Pagination`.
+- 📦 **API integration** — [Fake Store API](https://fakestoreapi.com/products).
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 🛠️ Tech Stack
+- [React 19](https://react.dev/) + [TypeScript](https://www.typescriptlang.org/)
+- [Vite](https://vitejs.dev/) for fast bundling
+- [Vitest](https://vitest.dev/) + [Testing Library](https://testing-library.com/) for testing
+- ESLint + Prettier for code quality
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## 📦 Installation & Setup
+
+Clone the repo and install dependencies:
+
+```bash
+git clone https://github.com/junedmd/Task.git
+cd client
+npm install
+npm run dev
+
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Running Tests
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+This project uses Vitest + React Testing Library.
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+Run all tests in watch mode
+
+```bash 
+npm test
+
 ```
+
+## Live Link
+
+[Click here to view the project](https://task-meci.vercel.app/)
+
+## Screen Shots
+![Homepage](./screenshots/Screenshot1.png)
+![Search Time in Search box](./screenshots/Screenshot2.png)
